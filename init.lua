@@ -1,4 +1,4 @@
--- bread's neovim config
+-- bread's neovim config stolen by allen-alex here
 -- keymaps are in lua/config/mappings.lua
 -- install a patched font & ensure your terminal supports glyphs
 -- enjoy :D
@@ -17,7 +17,6 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin')
 
 Plug('catppuccin/nvim', { ['as'] = 'catppuccin' }) --colorscheme
-Plug('uZer/pywal16.nvim', { [ 'as' ] = 'pywal16' }) --or, pywal colorscheme
 Plug('nvim-lualine/lualine.nvim') --statusline
 Plug('nvim-tree/nvim-web-devicons') --pretty icons
 Plug('folke/which-key.nvim') --mappings popup

@@ -24,13 +24,13 @@ vim.api.nvim_create_autocmd("BufEnter", {
 
 
 -- linting when file is written to
-vim.api.nvim_create_autocmd("BufWritePost", {
-  callback = function()
-    -- try_lint without arguments runs the linters defined in `linters_by_ft`
-    -- for the current filetype, on write
-    require("lint").try_lint()
-  end,
-})
+-- vim.api.nvim_create_autocmd("BufWritePost", {
+--   callback = function()
+--     -- try_lint without arguments runs the linters defined in `linters_by_ft`
+--     -- for the current filetype, on write
+--     require("lint").try_lint()
+--   end,
+-- })
 
 
 -- spellcheck in md
@@ -59,10 +59,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 
 -- reload files on external change
---vim.api.nvim_create_autocmd("FocusGained", {
---	pattern = "*",
---	command = "checktime",
---})
+vim.api.nvim_create_autocmd("FocusGained", {
+	pattern = "*",
+	command = "checktime",
+})
 
 
 -- restore cursor pos on file open

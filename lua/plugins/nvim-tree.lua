@@ -5,8 +5,8 @@ renderer = {
 --either add extra space, disable icons, or change font
 	icons = {
 		show = {
-		file = false,
-		folder = false,
+		file = true,
+		folder = true,
 		folder_arrow = true,
 		git = true,
 		},
@@ -14,7 +14,7 @@ renderer = {
 },
 	view = {
 		width = 25,
-		side = 'left',
+		side = 'right',
 	},
 	sync_root_with_cwd = true, --fix to open cwd with tree
 	respect_buf_cwd = true,

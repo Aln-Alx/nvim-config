@@ -10,7 +10,7 @@ dashboard.section.header.val = {
 }
 
 dashboard.section.buttons.val = {
-	dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+	dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
 	dashboard.button("f", "󰍉  Find file", ":lua require('fzf-lua').files() <CR>"),
 	dashboard.button("t", "  Browse cwd", ":NvimTreeOpen<CR>"),
 	dashboard.button("r", "  Browse src", ":e ~/.local/src/<CR>"),
